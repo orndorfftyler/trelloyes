@@ -6,17 +6,18 @@ function List(props) {
     
     const listCards = neededCards.map(object => 
         <Card
+        key={object.id}
         id={object.id}
         title={object.title}
         content={object.content}
         />
         );
     return (
-        <section class="List">
-        <header class="List-header">
+        <section className="List">
+        <header className="List-header">
           <h2>{props.header}</h2>
         </header>
-        <div id={props.id} class="List-cards">
+        <div key={props.id} id={props.id} className="List-cards">
             {listCards}
         </div>
         </section>
