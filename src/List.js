@@ -3,6 +3,7 @@ import Card from './Card.js';
 
 function List(props) {
     const neededCards = props.cardIds;
+    console.log('neededCards = ' + JSON.stringify(neededCards));
     
     const listCards = neededCards.map(object => 
         <Card

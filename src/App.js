@@ -7,11 +7,6 @@ function App(props) {
   const neededLists = props.store.lists;
   const allCards = props.store.allCards;
 
-  console.log(neededLists.map(object => 
-   
-    {object.cardIds.map(letter => allCards[letter])}
-    
-    ));
 
   const appLists = neededLists.map(object => 
       <List
@@ -21,6 +16,8 @@ function App(props) {
       cardIds={object.cardIds.map(letter => allCards[letter])}
       />
       );
+
+  //console.log(appLists[1]);
 
   return (
     <main className="App">

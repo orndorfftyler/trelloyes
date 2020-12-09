@@ -2,22 +2,22 @@
 
 exports[`List component renders the UI as expected 1`] = `
 <section
-  class="List"
+  className="List"
 >
   <header
-    class="List-header"
+    className="List-header"
   >
     <h2>
-      First list
+      Fourth list
     </h2>
   </header>
   <div
-    class="List-cards"
-    id="1"
+    className="List-cards"
+    id="4"
   >
     <div
       className="Card"
-      id="a"
+      id="l"
     >
       <button
         type="button"
@@ -25,7 +25,23 @@ exports[`List component renders the UI as expected 1`] = `
         delete
       </button>
       <h3>
-        First card
+        Twelfth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+    </div>
+    <div
+      className="Card"
+      id="m"
+    >
+      <button
+        type="button"
+      >
+        delete
+      </button>
+      <h3>
+        Thirteenth card
       </h3>
       <p>
         lorem ipsum
